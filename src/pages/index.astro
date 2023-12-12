@@ -1,0 +1,18 @@
+---
+import { css } from "../../styled-system/css";
+import { SpaceInvaders } from "../games/space-invaders/SpaceInvaders";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Sully game">
+  <main
+    class={css({
+      display: "grid",
+      placeItems: "center",
+      minH: "dvh",
+      bg: "gray.900",
+    })}
+  >
+    <SpaceInvaders />
+  </main>
+</Layout>
